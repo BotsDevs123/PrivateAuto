@@ -12,7 +12,7 @@ CAPTION_TEXT = """HI"""
 @Client.on_message(filters.media & filters.channel)
 async def caption(client, message: Message):
     kopp, _ = get_file_id(message)
-    await message.edit(f"<b>{kopp.file_name}</b>\n\n{CAPTION_TEXT}")
+    await message.edit(f"<code>{kopp.file_name}</code>\n\n{CAPTION_TEXT}")
 
 def get_file_id(msg: Message):
     if msg.media:
