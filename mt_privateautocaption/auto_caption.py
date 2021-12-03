@@ -7,7 +7,9 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import FloodWait
 
-CAPTION_TEXT = """HI"""
+CAPTION_TEXT = """
+<b>CHANNEL LINK ☞ https://youtube.com/c/MoTech_YT</b>
+"""
 
 @Client.on_message(filters.media & filters.channel)
 async def caption(client, message: Message):
